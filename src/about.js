@@ -14,7 +14,8 @@ export default function loadAbout() {
     infoText.textContent = "We are a new up-and-coming restaurant with a wild range of dishes and options to choose from as you dine in our establishment.";
     const endText = document.createElement("div");
     endText.textContent = "Incase of side effects or any other symptoms we take no responsibility whatsoever. Side effects may include some stuff, we haven't actually tested anything out.";
-    
+    infoText.classList.toggle("aboutDesc");
+    endText.classList.toggle("aboutBottom");
     container.appendChild(header);
     container.appendChild(infoText);
     container.appendChild(endText);

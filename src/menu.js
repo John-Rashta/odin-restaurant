@@ -72,16 +72,17 @@ export default function loadMenu() {
         const itemHead = document.createElement("h2");
         const itemBody = document.createElement("div");
         const itemDescription = document.createElement("div");
+        itemContainer.classList.toggle("menuItem");
         const itemImage = new Image();
         itemImage.src = item.img;
         itemHead.textContent = item.name;
         itemDescription.textContent = item.desc;
 
 
+        itemBody.appendChild(itemHead);
         itemBody.appendChild(itemDescription);
-        itemBody.appendChild(itemImage);
-        itemContainer.appendChild(itemHead);
         itemContainer.appendChild(itemBody);
+        itemContainer.appendChild(itemImage);
         menuContainer.appendChild(itemContainer);
 
 

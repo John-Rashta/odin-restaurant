@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'AlexBrush';
+    src: url('../fonts/AlexBrush-Regular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'SourceNormal';
+    src: url('../fonts/SourceSansPro-Regular.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'SourceBold';
+    src: url('../fonts/SourceSansPro-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+
 /* by Josh W. Comeau taken from https://www.joshwcomeau.com/css/custom-css-reset/ */
 /*
   1. Use a more-intuitive box-sizing model.
@@ -73,9 +95,10 @@ body {
 .menuGrid {
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 300px 300px;
     flex: 1;
-    gap: 50px;
+    gap: 100px;
     align-self:normal;
     padding: 20px 70px 0 70px;
 }
@@ -99,4 +122,75 @@ nav>button {
 #content {
 
     background-color: #d8b4fe;
+}
+
+body {
+
+    background-color: #e879f9;
+}
+
+.menuGrid {
+
+    background-color: #f43f5e;
+    border-radius: 50px;
+}
+
+h2 {
+    color : #881337;
+    font-family: "SourceBold";
+    font-size: 1.5rem;
+}
+
+.menuItem {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.menuItem>div {
+    color:#4a044e;
+    font-family: "SourceNormal";
+    font-size: 1rem;
+}
+
+h1 {
+
+    color: #4c1d95;
+}
+
+.aboutDesc {
+
+    width: 30%;
+    font-size: 1.5rem;
+    color: #6d28d9;
+
+
+}
+
+.aboutBottom {
+
+    font-family: "AlexBrush";
+
+
+}
+
+
+.bottomText {
+
+    font-size: 1.2rem;
+    color: #4c1d95;
+}
+
+
+nav>button {
+
+    border-radius: 10px;
+    border-style: none;
+    background-color: #fb7185;
+    color:#172554;
+    font-weight: bold;
+    font-family: "SourceNormal";
+    font-size: 1rem;
 }

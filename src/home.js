@@ -17,6 +17,7 @@ export default function LoadHome() {
     burger.src = Burg;
     const bottomText = document.createElement("div");
     bottomText.textContent = "We hope you enjoy the food and have a good time.";
+    bottomText.classList.toggle("bottomText");
 
     container.appendChild(header);
     container.appendChild(burger);
